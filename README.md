@@ -3,7 +3,7 @@
 An Intelligent Machine Learning web application that recommends the most suitable crops to farmers based on soil and environmental parameters.
 
 ## 🚀 Live Demo
-[Paste your Streamlit Link here]
+https://crop-prediction-ml-predict-your-crop.streamlit.app/
 
 ## 🛠️ Tech Stack
 - **Language:** Python
