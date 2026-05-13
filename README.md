@@ -26,6 +26,6 @@ Aap is project ka live version yahan dekh sakte hain:
 - `requirements.txt`: Deployment ke liye zaroori libraries ki list.
 
 ## ⚙️ How to Run Locally
-1. Clone the repo: `git clone [YOUR_REPO_URL]`
+1. Clone the repo
 2. Install requirements: `pip install -r requirements.txt`
 3. Run: `streamlit run web.py`
