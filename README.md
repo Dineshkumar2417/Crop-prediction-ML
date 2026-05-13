@@ -1,26 +1,31 @@
-# 🌾 AgriSmart: Crop Recommendation System
+# 🌾 AgriSmart: Precision Agriculture Assistant
 
-An Intelligent Machine Learning web application that recommends the most suitable crops to farmers based on soil and environmental parameters.
+AgriSmart ek intelligent Machine Learning application hai jo soil data aur weather conditions ko analyze karke kisaano ko batata hai ki kaunsi fasal (crop) unke liye sabse behtar hogi.
 
 ## 🚀 Live Demo
-https://crop-prediction-ml-predict-your-crop.streamlit.app/
+Aap is project ka live version yahan dekh sakte hain:
+👉 [**AgriSmart Live App**](https://crop-prediction-ml-predict-your-crop.streamlit.app/)
+
+## 📊 Key Features
+- **High Accuracy:** Random Forest Classifier ka use karke **99.3% accuracy** achieve ki gayi hai.
+- **Confidence Metrics:** Har prediction ke saath model ka confidence score dikhaya gaya hai.
+- **Top 5 Analysis:** Agar confidence kam ho, toh model top 5 alternative options bhi dikhata hai.
+- **Visual Previews:** Recommended crop ki image real-time mein load hoti hai.
+- **Reliable Warnings:** Galat input (jaise 100% se zyada humidity) par system alert deta hai.
 
 ## 🛠️ Tech Stack
 - **Language:** Python
-- **Machine Learning:** Scikit-learn (Random Forest Classifier)
-- **Data Handling:** Pandas, Numpy
-- **Web Interface:** Streamlit
-- **Deployment:** GitHub & Streamlit Cloud
-
-## 📊 Features
-- **High Accuracy:** Achieved **99.3% accuracy** on the test dataset.
-- **Confidence Metrics:** Shows the probability score for each prediction.
-- **Visual Analysis:** Displays a Bar Chart of the Top 5 recommended crops.
-- **Dynamic UI:** Includes real-time image previews of recommended crops.
-- **Error Handling:** Notifies users if environmental inputs are extreme or unrealistic.
+- **Libraries:** Scikit-learn, Pandas, NumPy, Matplotlib
+- **Web UI:** Streamlit
+- **Version Control:** Git & GitHub
 
 ## 📂 Project Structure
-- `app.py`: Training script for the ML model.
-- `web.py`: Streamlit frontend dashboard.
-- `crop_model.pkl`: Serialized model file.
-- `requirements.txt`: List of dependencies.
+- `web.py`: Streamlit dashboard ka frontend code.
+- `app.py`: Model training aur data processing script.
+- `crop_model.pkl`: Saved ML model file.
+- `requirements.txt`: Deployment ke liye zaroori libraries ki list.
+
+## ⚙️ How to Run Locally
+1. Clone the repo: `git clone [YOUR_REPO_URL]`
+2. Install requirements: `pip install -r requirements.txt`
+3. Run: `streamlit run web.py`
