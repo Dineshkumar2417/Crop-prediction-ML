@@ -1,31 +1,31 @@
-# 🌾 AgriSmart: Precision Agriculture Assistant
+# 🌾 AgriSmart: Precision Crop Recommendation System
 
-AgriSmart ek intelligent Machine Learning application hai jo soil data aur weather conditions ko analyze karke kisaano ko batata hai ki kaunsi fasal (crop) unke liye sabse behtar hogi.
+AgriSmart is an end-to-end Machine Learning application designed to assist farmers in identifying the most suitable crops for their land based on soil composition and environmental factors.
 
 ## 🚀 Live Demo
-Aap is project ka live version yahan dekh sakte hain:
+Experience the live application here:
 👉 [**AgriSmart Live App**](https://crop-prediction-ml-predict-your-crop.streamlit.app/)
 
-## 📊 Key Features
-- **High Accuracy:** Random Forest Classifier ka use karke **99.3% accuracy** achieve ki gayi hai.
-- **Confidence Metrics:** Har prediction ke saath model ka confidence score dikhaya gaya hai.
-- **Top 5 Analysis:** Agar confidence kam ho, toh model top 5 alternative options bhi dikhata hai.
-- **Visual Previews:** Recommended crop ki image real-time mein load hoti hai.
-- **Reliable Warnings:** Galat input (jaise 100% se zyada humidity) par system alert deta hai.
+## 📊 Key Highlights
+- **High Precision:** Achieved an accuracy of **99.3%** using the **Random Forest Classifier** algorithm.
+- **Interactive Dashboard:** Built a dynamic and responsive web interface using **Streamlit**.
+- **Data-Driven Insights:** Analyzes Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, pH, and Rainfall.
+- **Advanced Analytics:** Features a "Top 5 Crop Candidates" probability chart to provide alternative recommendations in low-confidence scenarios.
+- **Visual Feedback:** Displays real-time images of the recommended crops for an enhanced user experience.
 
 ## 🛠️ Tech Stack
 - **Language:** Python
-- **Libraries:** Scikit-learn, Pandas, NumPy, Matplotlib
-- **Web UI:** Streamlit
-- **Version Control:** Git & GitHub
+- **Machine Learning:** Scikit-learn, Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Deployment:** Streamlit Cloud & GitHub (CI/CD)
 
 ## 📂 Project Structure
-- `web.py`: Streamlit dashboard ka frontend code.
-- `app.py`: Model training aur data processing script.
-- `crop_model.pkl`: Saved ML model file.
-- `requirements.txt`: Deployment ke liye zaroori libraries ki list.
+- `web.py`: The main Streamlit application script.
+- `app.py`: Logic for data preprocessing and model inference.
+- `crop_model.pkl`: The trained and serialized machine learning model.
+- `requirements.txt`: List of dependencies for a seamless cloud environment setup.
 
-## ⚙️ How to Run Locally
-1. Clone the repo
-2. Install requirements: `pip install -r requirements.txt`
-3. Run: `streamlit run web.py`
+## ⚙️ Installation & Usage
+1. Clone the repository: `git clone [YOUR_REPO_URL]`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Run the application: `streamlit run web.py`
